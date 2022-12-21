@@ -1,7 +1,8 @@
 import { Button, ScrollView, StyleSheet, Text, TextInput, View, Image, TouchableHighlight } from 'react-native';
 
-import PATHS from '../../../paths/paths';
-import STRINGS from '../../../strings/strings';
+import PATHS from '../../../common/paths/paths';
+import STRINGS from '../../../common/strings/strings';
+import COLORS from '../../../common/colors/colors';
 
 export default function FarmerRegistration() {
   return (
@@ -26,10 +27,10 @@ export default function FarmerRegistration() {
       </ScrollView>
       <View style={styles.buttonContainer}>
         <TouchableHighlight style={styles.button}>
-          <Button color="#778A35"  title='Back' />
+          <Button color={COLORS['primary']}  title='Back' />
         </TouchableHighlight>
         <TouchableHighlight style={styles.button}>
-          <Button color="#778A35" title='Next' />
+          <Button color={COLORS['primary']} title='Next' />
         </TouchableHighlight>
       </View>
     </View>
@@ -38,12 +39,12 @@ export default function FarmerRegistration() {
 
 const styles = StyleSheet.create({
   mainContainer: {
-    backgroundColor: '#EBEBE8',
+    backgroundColor: COLORS['primary-background'],
     paddingVertical: 50,
     paddingHorizontal: 20,
   },
   headerText: {
-    color: '#778A35',
+    color: COLORS['primary'],
     fontSize: 36,
     fontWeight: 'bold',
     textAlign: 'center',
@@ -68,12 +69,12 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
     marginTop: 20,
     borderRadius: 10,
-    backgroundColor: '#D1E2C4',
+    backgroundColor: COLORS['secondary-background'],
     flexDirection: 'column',
   },
   input: {
     marginVertical: 8,
-    backgroundColor: '#fff',
+    backgroundColor: COLORS['white'],
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 10,
