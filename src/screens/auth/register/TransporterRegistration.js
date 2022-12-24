@@ -1,8 +1,9 @@
-import { Button, ScrollView, StyleSheet, Text, TextInput, View, Image, TouchableHighlight } from 'react-native';
+import { Button, ScrollView, Text, TextInput, View, Image, TouchableHighlight } from 'react-native';
 
 import PATHS from '../../../common/paths/paths';
 import STRINGS from '../../../common/strings/strings';
 import COLORS from '../../../common/colors/colors';
+import styles from '../../../common/styles/styles';
 
 export default function TransporterRegistration() {
   return (
