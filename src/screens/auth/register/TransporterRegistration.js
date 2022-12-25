@@ -3,7 +3,7 @@ import { Button, ScrollView, Text, TextInput, View, Image, TouchableHighlight } 
 import PATHS from '../../../common/paths/paths';
 import STRINGS from '../../../common/strings/strings';
 import COLORS from '../../../common/colors/colors';
-import styles from '../../../common/styles/styles';
+import styles from '../../../common/styles/styleSheet';
 
 export default function TransporterRegistration() {
   return (
