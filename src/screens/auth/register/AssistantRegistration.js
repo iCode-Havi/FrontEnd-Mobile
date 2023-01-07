@@ -3,7 +3,7 @@ import { Button, ScrollView,  Text, TextInput, View, Image, TouchableHighlight }
 import PATHS from '../../../common/paths/paths';
 import STRINGS from '../../../common/strings/strings';
 import COLORS from '../../../common/colors/colors';
-import styles from '../../../common/styles/styleSheet';
+import styles from '../../../common/styles/styles';
 
 export default function AssistantRegistration() {
   return (
