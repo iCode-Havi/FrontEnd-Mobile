@@ -1,46 +1,45 @@
 import React from 'react';
-import { Button, ScrollView, Text, TextInput, View, Image, TouchableHighlight } from 'react-native';
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import { ScrollView, Text, TextInput, View, TouchableHighlight, SafeAreaView } from 'react-native';
 
 //COMMON
-import PATHS from '../../../common/paths/paths';
 import STRINGS from '../../../common/strings/strings';
 import COMMON_STYLES from '../../../common/styles/styles';
+import COLORS from '../../../common/colors/colors';
 
-export default function AssistantRegistration() {
+export default function AssistantRegistration({ navigation }) {
+
+  const icon_arrow_circle_left = <FontAwesome5 name={'arrow-circle-left'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('TransporterRegistration')}/>;
+  const icon_arrow_circle_right = <FontAwesome5 name={'arrow-circle-right'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('FarmerRegistration')}/>;
+
   return (
-    <View style={COMMON_STYLES.mainContainer}>
-      <View>
-        <Text style={COMMON_STYLES.headerText}>{STRINGS.assistantRegisterHeaderName}</Text>
-      </View>
-      <ScrollView style={COMMON_STYLES.registrationForm}>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.firstName}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.insertImage}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.email}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact1}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact2}></TextInput>
-        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.location}></TextInput>
+    <SafeAreaView style={COMMON_STYLES.container}>
+      <ScrollView style={COMMON_STYLES.mainContainer}>
+        <View style={COMMON_STYLES.mainText}>
+          <Text style={COMMON_STYLES.headerText}>{STRINGS.assistantRegisterHeaderName}</Text>
+        </View>
+        <View style={COMMON_STYLES.registrationForm}>
+          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.firstName}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.insertImage}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.email}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact1}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact2}></TextInput>
+          <TextInput style={COMMON_STYLES.inputLast} placeholder={STRINGS.location}></TextInput>
+          <View style={COMMON_STYLES.buttonContainer}>
+            <TouchableHighlight style={COMMON_STYLES.button}>
+              {icon_arrow_circle_left}
+            </TouchableHighlight>
+            <TouchableHighlight style={COMMON_STYLES.button}>
+              {icon_arrow_circle_right}
+            </TouchableHighlight>
+          </View>
+        </View>
       </ScrollView>
-      <View style={COMMON_STYLES.buttonContainer}>
-        <TouchableHighlight style={COMMON_STYLES.button}>
-          <Button   title='Back' />
-        </TouchableHighlight>
-        <TouchableHighlight style={COMMON_STYLES.button}>
-          <Button  title='Next' />
-        </TouchableHighlight>
-      </View>
-      {/* <View style={COMMON_STYLES.buttonContainer}>
-        <TouchableHighlight style={COMMON_STYLES.button}>
-          <Button   title='Back' />
-        </TouchableHighlight>
-        <TouchableHighlight style={COMMON_STYLES.button}>
-          <Button  title='Next' />
-        </TouchableHighlight>
-      </View> */}
-    </View>
+    </SafeAreaView>
   );
 }
 
