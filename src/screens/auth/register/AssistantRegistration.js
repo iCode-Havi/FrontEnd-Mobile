@@ -6,16 +6,13 @@ import PATHS from '../../../common/paths/paths';
 import STRINGS from '../../../common/strings/strings';
 import COMMON_STYLES from '../../../common/styles/styles';
 
-export default function FarmerRegistration() {
+export default function AssistantRegistration() {
   return (
     <View style={COMMON_STYLES.mainContainer}>
       <View>
-        <Text style={COMMON_STYLES.headerText}>{STRINGS.farmerRegisterHeaderName}</Text>
+        <Text style={COMMON_STYLES.headerText}>{STRINGS.assistantRegisterHeaderName}</Text>
       </View>
-      <View style={COMMON_STYLES.headerImage}>
-        <Image style={COMMON_STYLES.img} source={PATHS.farmerRegisterImagePath} />
-      </View>
-      {/* <ScrollView style={COMMON_STYLES.registrationForm}>
+      <ScrollView style={COMMON_STYLES.registrationForm}>
         <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.firstName}></TextInput>
         <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>
         <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic}></TextInput>
@@ -28,6 +25,14 @@ export default function FarmerRegistration() {
         <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.location}></TextInput>
       </ScrollView>
       <View style={COMMON_STYLES.buttonContainer}>
+        <TouchableHighlight style={COMMON_STYLES.button}>
+          <Button   title='Back' />
+        </TouchableHighlight>
+        <TouchableHighlight style={COMMON_STYLES.button}>
+          <Button  title='Next' />
+        </TouchableHighlight>
+      </View>
+      {/* <View style={COMMON_STYLES.buttonContainer}>
         <TouchableHighlight style={COMMON_STYLES.button}>
           <Button   title='Back' />
         </TouchableHighlight>

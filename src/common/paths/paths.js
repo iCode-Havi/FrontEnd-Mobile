@@ -1,5 +1,7 @@
+const BASE_PATH = '../../../assets/';
+
 const PATHS =  {
-    farmerRegisterImagePath: require('../../../assets/images/farmer-icon.png'),
+    farmerRegisterImagePath: require(BASE_PATH + 'images/farmer-icon.png'),
 }
 
 export default PATHS;
