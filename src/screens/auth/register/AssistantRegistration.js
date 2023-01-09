@@ -1,39 +1,45 @@
-import { Button, ScrollView,  Text, TextInput, View, Image, TouchableHighlight } from 'react-native';
+import React from 'react';
+import { Button, ScrollView, Text, TextInput, View, Image, TouchableHighlight } from 'react-native';
 
+//COMMON
 import PATHS from '../../../common/paths/paths';
 import STRINGS from '../../../common/strings/strings';
-import COLORS from '../../../common/colors/colors';
-import styles from '../../../common/styles/styleSheet';
+import COMMON_STYLES from '../../../common/styles/styles';
 
 export default function AssistantRegistration() {
   return (
-    <View style={styles.mainContainer}>
+    <View style={COMMON_STYLES.mainContainer}>
       <View>
-        <Text style={styles.headerText}>{STRINGS.farmerRegisterHeaderName}</Text>
+        <Text style={COMMON_STYLES.headerText}>{STRINGS.assistantRegisterHeaderName}</Text>
       </View>
-      <View style={styles.headerImage}>
-        <Image style={styles.img} source={PATHS.farmerRegisterImagePath} />
-      </View>
-      <ScrollView style={styles.registrationForm}>
-        <TextInput style={styles.input} placeholder={STRINGS.firstName}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.lastName}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.nic}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.insertImage}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.email}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.password}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.confirmPassword}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.contact1}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.contact2}></TextInput>
-        <TextInput style={styles.input} placeholder={STRINGS.location}></TextInput>
+      <ScrollView style={COMMON_STYLES.registrationForm}>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.firstName}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.insertImage}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.email}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact1}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact2}></TextInput>
+        <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.location}></TextInput>
       </ScrollView>
-      <View style={styles.buttonContainer}>
-        <TouchableHighlight style={styles.button}>
-          <Button color={COLORS['primary']}  title='Back' />
+      <View style={COMMON_STYLES.buttonContainer}>
+        <TouchableHighlight style={COMMON_STYLES.button}>
+          <Button   title='Back' />
         </TouchableHighlight>
-        <TouchableHighlight style={styles.button}>
-          <Button color={COLORS['primary']} title='Next' />
+        <TouchableHighlight style={COMMON_STYLES.button}>
+          <Button  title='Next' />
         </TouchableHighlight>
       </View>
+      {/* <View style={COMMON_STYLES.buttonContainer}>
+        <TouchableHighlight style={COMMON_STYLES.button}>
+          <Button   title='Back' />
+        </TouchableHighlight>
+        <TouchableHighlight style={COMMON_STYLES.button}>
+          <Button  title='Next' />
+        </TouchableHighlight>
+      </View> */}
     </View>
   );
 }

@@ -1,6 +1,8 @@
 import { StyleSheet } from 'react-native';
 
-const styleSheet = StyleSheet.create({
+import COLORS from '../colors/colors';
+
+const COMMON_STYLES= StyleSheet.create({
     mainContainer: {
       backgroundColor: COLORS['primary-background'],
       paddingVertical: 50,
@@ -14,19 +16,7 @@ const styleSheet = StyleSheet.create({
       paddingHorizontal: 20,
       marginBottom: 10,
     },
-    headerImage: {
-      height: '40%',
-      alignItems: 'center',
-      justifyContent: 'center',
-      width: '100%',
-    },
-    img: {
-      height: '100%',
-      resizeMode: 'contain',
-      alignItems: 'flex-start'
-    },
     registrationForm: {
-      height: '40%',
       paddingVertical: 10,
       paddingHorizontal: 20,
       paddingBottom: 30,
@@ -56,5 +46,5 @@ const styleSheet = StyleSheet.create({
     }
   });
 
-  export default styleSheet;
+  export default COMMON_STYLES;
   

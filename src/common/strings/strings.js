@@ -1,5 +1,6 @@
 const STRINGS = {
     farmerRegisterHeaderName: "Welcome To Havi Farmer's Team",
+    assistantRegisterHeaderName: "Welcome To Havi Assistant's Team",
     firstName: 'First Name',
     lastName: 'Last Name',
     password: 'Password',
