@@ -43,6 +43,15 @@ const COMMON_STYLES = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 8
   },
+
+  selectInput: {
+    backgroundColor: COLORS['white'],
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    borderRadius: 10,
+    marginBottom: 8
+  },
+ 
   inputLast: {
     backgroundColor: COLORS['white'],
     paddingHorizontal: 20,
@@ -56,6 +65,16 @@ const COMMON_STYLES = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 20
   },
+
+  addButtonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    marginBottom: 35,
+  },
+
+
+  
   button: {
     borderRadius: 10,
     marginLeft: 10,
@@ -64,7 +83,18 @@ const COMMON_STYLES = StyleSheet.create({
     flex: 1, 
     flexDirection: 'row',
     alignItems: 'flex-end'
+  },
+
+  AddFoodBtn: {
+    borderRadius: 10,
+    marginLeft: 7,
+    backgroundColor: COLORS['secondary-background'],
+  },
+  addFoodMainContainer: {
+    backgroundColor: COLORS['primary-background'],
+    paddingHorizontal: 10,
   }
+
 });
 
 export default COMMON_STYLES;
