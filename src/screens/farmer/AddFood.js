@@ -6,6 +6,8 @@ import { SelectList } from 'react-native-dropdown-select-list';
 import STRINGS from '../../common/strings/strings';
 import COMMON_STYLES from '../../common/styles/styles';
 
+import HeaderBar from '../../components/headerBar/HeaderBar';
+
 export default function AssistantRegistration({ navigation }) {
 
     // const [selected, setSelected] = useState("");
@@ -19,7 +21,11 @@ export default function AssistantRegistration({ navigation }) {
  
   return (
     <SafeAreaView style={COMMON_STYLES.container}>
+     
       <ScrollView style={COMMON_STYLES.addFoodMainContainer}>
+      <View style={COMMON_STYLES.headerBarStyles}>
+            <HeaderBar/>
+        </View>
         <View style={COMMON_STYLES.mainText}>
           <Text style={COMMON_STYLES.headerText}>Add Food</Text>
         </View>
@@ -27,22 +33,29 @@ export default function AssistantRegistration({ navigation }) {
         
           <SelectList style={COMMON_STYLES.selectInput}
             // setSelected={(val) => setSelected(val)} 
+            defaultOption="Food Type"
             data={data} 
             save="value"/>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.foodName}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.availableQuantity}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.unitPrice}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.duration}></TextInput>
+          <SelectList style={COMMON_STYLES.input}
+            // setSelected={(val) => setSelected(val)} 
+            defaultOption="Duration"
+            data={data} 
+            save="value"/>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.addImages}></TextInput>
         </View>
-      </ScrollView>
-
-         <View style={COMMON_STYLES.addButtonContainer}>
+        <View style={COMMON_STYLES.addButtonContainer}>
             <Button style={COMMON_STYLES.AddFoodBtn} title="Add"
               onPress={null}/>
             <Button style={COMMON_STYLES.AddFoodBtn} title="Edit"
               onPress={null}/>
           </View>
+      </ScrollView>
+
+ 
+
     </SafeAreaView>
   );
 }

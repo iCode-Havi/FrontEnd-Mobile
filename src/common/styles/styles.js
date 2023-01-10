@@ -70,7 +70,7 @@ const COMMON_STYLES = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
     alignItems: 'center',
-    marginBottom: 35,
+    marginTop: 15,
   },
 
 
@@ -86,14 +86,21 @@ const COMMON_STYLES = StyleSheet.create({
   },
 
   AddFoodBtn: {
-    borderRadius: 10,
-    marginLeft: 7,
-    backgroundColor: COLORS['secondary-background'],
+    borderRadius:5,
+    marginLeft: 3,
+    padding: 2,
+    backgroundColor: COLORS['primary'],
+    color: COLORS['white'],
   },
   addFoodMainContainer: {
     backgroundColor: COLORS['primary-background'],
     paddingHorizontal: 10,
+  },
+  headerBarStyles:  {
+    paddingHorizontal: 2,
   }
+
+
 
 });
 
