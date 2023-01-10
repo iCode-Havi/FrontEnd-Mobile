@@ -12,8 +12,17 @@ const STRINGS = {
     location: 'Location',
     nic: 'NIC No',
     email: 'Email Address',
+
+    foodType: 'Food Type',
+    foodName: 'Food Name',
+    availableQuantity: 'Available Quantity',
+    unitPrice: 'Unit Price',
+    duration: 'Duration',
+    addImages: 'Add Images',
+
     homePage: 'Home Page',
     settings: 'Account Page',
+
 }
 
 export default STRINGS;

@@ -8,19 +8,21 @@ import STRINGS from '../../common/strings/strings';
 import COMMON_STYLES from '../../common/styles/styles';
 import COLORS from '../../common/colors/colors';
 
-export default function Home({navigation}) {
+export default function FarmerPortal({navigation}) {
 
   return (
     <View style={COMMON_STYLES.mainContainer}>
       
-        <Text style={COMMON_STYLES.headerText}>{STRINGS.homePage}</Text>
+        <Text style={COMMON_STYLES.headerText}>Farmer Portal</Text>
         <View style={COMMON_STYLES.buttonContainer}>
        
-              <Button style={COMMON_STYLES.button} title="Farmer"
+              <Button style={COMMON_STYLES.button} title="Add Food"
               onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
-              <Button style={COMMON_STYLES.button} title="Assistant"
+              <Button style={COMMON_STYLES.button} title="Profile"
               onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
-              <Button style={COMMON_STYLES.button} title="Transporter"
+              <Button style={COMMON_STYLES.button} title="Chat"
+              onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
+             <Button style={COMMON_STYLES.button} title="Orders"
               onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
           </View>
       
