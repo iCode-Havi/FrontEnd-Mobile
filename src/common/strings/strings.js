@@ -14,6 +14,9 @@ const STRINGS = {
     nic: 'NIC No',
     email: 'Email Address',
 
+    userName: 'User Name',
+    password: 'Password',
+
     foodType: 'Food Type',
     foodName: 'Food Name',
     availableQuantity: 'Available Quantity',

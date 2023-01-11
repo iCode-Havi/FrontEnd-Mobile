@@ -20,26 +20,19 @@ export default function UserLogin({ navigation }) {
         </View>
       
         <View style={COMMON_STYLES.registrationForm}>
-          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.firstName}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.insertImage}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.email}></TextInput>
+          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.userName}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact1}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact2}></TextInput>
-          <TextInput style={COMMON_STYLES.inputLast} placeholder={STRINGS.location}></TextInput>
-          <View style={COMMON_STYLES.buttonContainer}>
-            <TouchableHighlight style={COMMON_STYLES.button}>
-              {icon_arrow_circle_left}
-            </TouchableHighlight>
-            <TouchableHighlight style={COMMON_STYLES.button}>
-              {icon_arrow_circle_right}
-            </TouchableHighlight>
-          </View>
+
         </View>
       </ScrollView>
+
+      <View>
+            <TouchableHighlight
+            onPress={() => navigation.navigate('farmerPortal')} >
+                <Text>Login</Text>
+            </TouchableHighlight>
+          </View>
+
     </SafeAreaView>
   );
 }

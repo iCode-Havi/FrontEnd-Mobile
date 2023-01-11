@@ -20,8 +20,7 @@ export default function Home({ navigation }) {
           onPress={() => navigation.navigate('AssistantRegistration')} />
         <Button style={COMMON_STYLES.button} title="Transporter"
           onPress={() => navigation.navigate('TransporterRegistration')} />
-        <Button style={COMMON_STYLES.button} title="Farmer Portal"
-          onPress={() => navigation.navigate('farmerPortal')} />
+  
       </View>
     </View>
   );

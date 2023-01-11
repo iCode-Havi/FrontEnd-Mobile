@@ -10,6 +10,7 @@ import AssistantRegistration from '../screens/auth/register/AssistantRegistratio
 import TransporterRegistration from '../screens/auth/register/TransporterRegistration';
 import UserLogin from '../screens/auth/login/UserLogin';
 import FarmerOrders from '../screens/farmer/FarmerOrders';
+import FarmerProfile from '../screens/farmer/FarmerProfile';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +25,7 @@ export default function StackNavigator() {
 
             <Stack.Screen name="home" component={Home} />
             <Stack.Screen name="AddFood" component={AddFood} />
+            <Stack.Screen name="FarmerProfile" component={FarmerProfile} />
             <Stack.Screen name="farmerPortal" component={FarmerPortal} />
             <Stack.Screen name="FarmerRegistration" component={FarmerRegistration} />
             <Stack.Screen name="AssistantRegistration" component={AssistantRegistration} />
