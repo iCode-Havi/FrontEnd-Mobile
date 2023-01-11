@@ -7,23 +7,18 @@ import STRINGS from '../../../common/strings/strings';
 import COMMON_STYLES from '../../../common/styles/styles';
 import COLORS from '../../../common/colors/colors';
 
-export default function AssistantRegistration({ navigation }) {
+export default function UserLogin({ navigation }) {
 
-  const icon_arrow_circle_left = <FontAwesome5 name={'arrow-circle-left'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('TransporterRegistration')}/>;
-  const icon_arrow_circle_right = <FontAwesome5 name={'arrow-circle-right'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('FarmerRegistration')}/>;
+  const icon_arrow_circle_left = <FontAwesome5 name={'arrow-circle-left'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('AssistantRegistration')} />;
+  const icon_arrow_circle_right = <FontAwesome5 name={'arrow-circle-right'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('TransporterRegistration')} />;
 
   return (
     <SafeAreaView style={COMMON_STYLES.container}>
       <ScrollView style={COMMON_STYLES.mainContainer}>
         <View style={COMMON_STYLES.mainText}>
-          <Text style={COMMON_STYLES.headerText}>{STRINGS.assistantRegisterHeaderName}</Text>
+          <Text style={COMMON_STYLES.headerText}>{STRINGS.loginText}</Text>
         </View>
-        <View>
-           <TouchableHighlight style={COMMON_STYLES.button}
-            onPress={() => navigation.navigate('UserLogin')} >
-              <Text>Already Have an Account?</Text>
-            </TouchableHighlight>
-        </View>
+      
         <View style={COMMON_STYLES.registrationForm}>
           <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.firstName}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>

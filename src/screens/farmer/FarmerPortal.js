@@ -1,32 +1,38 @@
 import React from 'react';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
-import { Button, Text, View} from 'react-native';
+import { FlatList, Text, TouchableHighlight, View, SafeAreaView} from 'react-native';
 
 
 //COMMON
-import STRINGS from '../../common/strings/strings';
+
 import COMMON_STYLES from '../../common/styles/styles';
-import COLORS from '../../common/colors/colors';
+import FARMER_STYLES from '../../common/styles/farmerStyles';
+
 
 export default function FarmerPortal({navigation}) {
 
   return (
+    <SafeAreaView style={COMMON_STYLES.container}>
     <View style={COMMON_STYLES.mainContainer}>
-      
+      <FlatList>
+
+        <View></View>
         <Text style={COMMON_STYLES.headerText}>Farmer Portal</Text>
-        <View style={COMMON_STYLES.buttonContainer}>
-       
-              <Button style={COMMON_STYLES.button} title="Add Food"
-              onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
-              <Button style={COMMON_STYLES.button} title="Profile"
-              onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
-              <Button style={COMMON_STYLES.button} title="Chat"
-              onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
-             <Button style={COMMON_STYLES.button} title="Orders"
-              onPress={() => navigation.navigate('../auth/register/FarmerRegistration')}/>
-          </View>
-      
+        <View style={FARMER_STYLES.Content}>
+            <TouchableHighlight style={FARMER_STYLES.fPortalBtn} onPress={null}>
+                <Text>Profile</Text>
+            </TouchableHighlight>
+            <TouchableHighlight style={FARMER_STYLES.fPortalBtn} onPress={null}>
+                <Text>Orders</Text>
+            </TouchableHighlight>
+            <TouchableHighlight style={FARMER_STYLES.fPortalBtn} onPress={null}>
+                <Text>Add New Food</Text>
+            </TouchableHighlight>
+        </View>
+
+      </FlatList> 
     </View>
+    </SafeAreaView>
   );
 }
 

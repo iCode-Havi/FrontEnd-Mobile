@@ -2,6 +2,7 @@ const STRINGS = {
     farmerRegisterHeaderName: "Welcome To Havi Farmer's Team",
     assistantRegisterHeaderName: "Welcome To Havi Assistant's Team",
     transporterRegisterHeaderName: "Welcome To Havi Transporter's Team",
+    loginText: "Log in to Your Account",
     firstName: 'First Name',
     lastName: 'Last Name',
     password: 'Password',

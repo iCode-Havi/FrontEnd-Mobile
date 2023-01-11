@@ -15,11 +15,13 @@ export default function Home({ navigation }) {
       <View style={COMMON_STYLES.buttonContainer}>
 
         <Button style={COMMON_STYLES.button} title="Farmer"
-          onPress={() => navigation.navigate('home')} />
+          onPress={() => navigation.navigate('FarmerRegistration')} />
         <Button style={COMMON_STYLES.button} title="Assistant"
-          onPress={() => navigation.navigate('AddFood')} />
+          onPress={() => navigation.navigate('AssistantRegistration')} />
         <Button style={COMMON_STYLES.button} title="Transporter"
-          onPress={() => navigation.navigate('transporter')} />
+          onPress={() => navigation.navigate('TransporterRegistration')} />
+        <Button style={COMMON_STYLES.button} title="Farmer Portal"
+          onPress={() => navigation.navigate('farmerPortal')} />
       </View>
     </View>
   );

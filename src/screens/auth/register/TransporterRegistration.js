@@ -18,6 +18,12 @@ export default function TransporterRegistration({ navigation }) {
         <View style={COMMON_STYLES.mainText}>
           <Text style={COMMON_STYLES.headerText}>{STRINGS.transporterRegisterHeaderName}</Text>
         </View>
+        <View>
+           <TouchableHighlight style={COMMON_STYLES.button}
+            onPress={() => navigation.navigate('UserLogin')} >
+              <Text>Already Have an Account?</Text>
+            </TouchableHighlight>
+        </View>
         <View style={COMMON_STYLES.registrationForm}>
           <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.firstName}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>
