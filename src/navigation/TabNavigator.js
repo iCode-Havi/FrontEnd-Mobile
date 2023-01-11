@@ -17,7 +17,7 @@ const Tab = createBottomTabNavigator();
 const TabScreenNames = {
     TabIconName01: 'Home',
     TabIconName02: 'Details',
-    TabIconName03: 'Account'
+    TabIconName03: 'Account',
 }
 
 const TabNavigator = () => {
