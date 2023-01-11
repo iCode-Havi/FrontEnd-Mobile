@@ -37,12 +37,13 @@ export default function AddFood({ navigation }) {
             save="value" />
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.addImages}></TextInput>
         </View>
-        <View style={COMMON_STYLES.addButtonContainer}>
-          <Button style={COMMON_STYLES.AddFoodBtn} title="Add"
-            onPress={null} />
-          <Button style={COMMON_STYLES.AddFoodBtn} title="Edit"
-            onPress={null} />
-        </View>
+        <View style={COMMON_STYLES.buttonContainer}>
+            <TouchableHighlight
+            style={COMMON_STYLES.regBtn}
+            onPress={() => navigation.navigate('farmerPortal')}>
+              <Text  style={COMMON_STYLES.regBtnText}>Save Changes</Text>
+            </TouchableHighlight>
+          </View>
       </ScrollView>
     </SafeAreaView>
   );
