@@ -9,11 +9,10 @@ import COLORS from '../../../common/colors/colors';
 
 export default function AssistantRegistration({ navigation }) {
 
-  const icon_arrow_circle_left = <FontAwesome5 name={'arrow-circle-left'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('TransporterRegistration')}/>;
-  const icon_arrow_circle_right = <FontAwesome5 name={'arrow-circle-right'} color={COLORS.primary} size={30} onPress={() => navigation.navigate('FarmerRegistration')}/>;
 
   return (
     <SafeAreaView style={COMMON_STYLES.container}>
+      <ScrollView>
       <ScrollView style={COMMON_STYLES.mainContainer}>
         <View style={COMMON_STYLES.mainText}>
           <Text style={COMMON_STYLES.headerText}>{STRINGS.assistantRegisterHeaderName}</Text>
@@ -28,23 +27,41 @@ export default function AssistantRegistration({ navigation }) {
           <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.firstName}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.insertImage}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.dob}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.profession}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.professionProof}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.email}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact1}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact2}></TextInput>
-          <TextInput style={COMMON_STYLES.inputLast} placeholder={STRINGS.location}></TextInput>
-          <View style={COMMON_STYLES.buttonContainer}>
-            <TouchableHighlight style={COMMON_STYLES.button}>
-              {icon_arrow_circle_left}
-            </TouchableHighlight>
-            <TouchableHighlight style={COMMON_STYLES.button}>
-              {icon_arrow_circle_right}
-            </TouchableHighlight>
-          </View>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.region}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword}></TextInput>
+       
         </View>
       </ScrollView>
+        <View style={COMMON_STYLES.mainText}>
+          <Text style={COMMON_STYLES.paymentText}>{STRINGS.paymentText}</Text>
+        </View>
+        <ScrollView>
+        <View style={COMMON_STYLES.paymentForm}>
+        
+          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.holderName}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.bank}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.branch}></TextInput>
+          
+          </View>
+
+        </ScrollView>
+        <View style={COMMON_STYLES.buttonContainer}>
+            <TouchableHighlight
+            style={COMMON_STYLES.regBtn}
+            onPress={() => navigation.navigate('farmerPortal')}>
+              <Text  style={COMMON_STYLES.regBtnText}>Create Account</Text>
+            </TouchableHighlight>
+          </View>
+
+        </ScrollView>
+        
     </SafeAreaView>
   );
 }

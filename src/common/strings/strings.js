@@ -2,6 +2,7 @@ const STRINGS = {
     farmerRegisterHeaderName: "Welcome To Havi Farmer's Team",
     assistantRegisterHeaderName: "Welcome To Havi Assistant's Team",
     transporterRegisterHeaderName: "Welcome To Havi Transporter's Team",
+    paymentText: 'Add your Bank Details',
     loginText: "Log in to Your Account",
     firstName: 'First Name',
     lastName: 'Last Name',
@@ -13,6 +14,14 @@ const STRINGS = {
     location: 'Location',
     nic: 'NIC No',
     email: 'Email Address',
+    dob: 'Date Of Birth',
+    profession: 'Profession',
+    professionProof: 'Profession proof',
+    region: 'Region',
+
+    holderName: 'Holder Name',
+    bank: 'Bank',
+    branch: 'Branch',
 
     userName: 'User Name',
     password: 'Password',

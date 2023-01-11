@@ -21,6 +21,15 @@ const COMMON_STYLES = StyleSheet.create({
     paddingHorizontal: 20,
     marginBottom: 10,
   },
+
+  paymentText: {
+    color: COLORS['primary'],
+    fontSize: 32,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 10,
+  },
+
   registrationForm: {
     paddingHorizontal: 20,
     marginTop: 20,
@@ -28,6 +37,16 @@ const COMMON_STYLES = StyleSheet.create({
     backgroundColor: COLORS['secondary-background'],
     flexDirection: 'column',
   },
+
+  paymentForm: {
+    paddingHorizontal: 20,
+    marginTop: 30,
+    borderRadius: 10,
+    backgroundColor: COLORS['secondary-background'],
+    flexDirection: 'column',
+  },
+
+
   inputFirst: {
     backgroundColor: COLORS['white'],
     paddingHorizontal: 20,
@@ -36,6 +55,7 @@ const COMMON_STYLES = StyleSheet.create({
     marginTop: 20,
     marginBottom: 8
   },
+
   input: {
     backgroundColor: COLORS['white'],
     paddingHorizontal: 20,
@@ -79,6 +99,21 @@ const COMMON_STYLES = StyleSheet.create({
     borderRadius: 10,
     marginLeft: 10,
   },
+
+  regBtn: {
+    height: 28,
+    width: 140,
+    borderRadius: 10,
+    marginTop: 10,
+    backgroundColor: COLORS['primary'],
+  },
+
+  regBtnText: {
+    color: 'white',
+    textAlign: 'center',
+    fontSize: 16,
+  },
+
   headerBar: {
     flex: 1, 
     flexDirection: 'row',
