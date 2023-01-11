@@ -4,6 +4,9 @@ const STRINGS = {
     transporterRegisterHeaderName: "Welcome To Havi Transporter's Team",
     paymentText: 'Add your Bank Details',
     loginText: "Log in to Your Account",
+    otpText: 'Add the OTP received by your contact',
+    cardNo: 'Card No',
+
     firstName: 'First Name',
     lastName: 'Last Name',
     password: 'Password',
@@ -22,6 +25,10 @@ const STRINGS = {
     holderName: 'Holder Name',
     bank: 'Bank',
     branch: 'Branch',
+    expYr: 'Expire Year',
+    expMonth: 'Expire Month',
+    cvv: 'CVV',
+    otp:'OTP',
 
     userName: 'User Name',
     password: 'Password',

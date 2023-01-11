@@ -47,7 +47,7 @@ export default function AssistantRegistration({ navigation }) {
         
           <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.holderName}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.bank}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.branch}></TextInput>
+          <TextInput style={COMMON_STYLES.inputLast} placeholder={STRINGS.branch}></TextInput>
           
           </View>
 
