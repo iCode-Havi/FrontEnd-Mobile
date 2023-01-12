@@ -18,7 +18,7 @@ import Portal from '../screens/common/Portal';
 
 const Stack = createNativeStackNavigator();
 
-export default function StackNavigator() {
+export default function StackNavigatorHome() {
     return (
         <Stack.Navigator screenOptions={() => ({
             headerBackButtonMenuEnabled: true,

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { ScrollView, Text, TextInput, View, TouchableHighlight, SafeAreaView } from 'react-native';
 
 //COMMON
@@ -25,55 +25,49 @@ export default function AssistantRegistration({ navigation }) {
 
   return (
     <SafeAreaView style={COMMON_STYLES.container}>
-      <ScrollView>
       <ScrollView style={COMMON_STYLES.mainContainer}>
         <View style={COMMON_STYLES.mainText}>
           <Text style={COMMON_STYLES.headerText}>{STRINGS.assistantRegisterHeaderName}</Text>
         </View>
         <View>
-           <TouchableHighlight style={COMMON_STYLES.button}
+          <TouchableHighlight style={COMMON_STYLES.button}
             onPress={() => navigation.navigate('UserLogin')} >
-              <Text>Already Have an Account?</Text>
-            </TouchableHighlight>
+            <Text>{STRINGS.alreadyHaveAccountText}</Text>
+          </TouchableHighlight>
         </View>
         <View style={COMMON_STYLES.registrationForm}>
-          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.firstName} onChange={(val)=> setFirstName(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName} onChange={(val)=> setLastName(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic} onChange={(val)=> setNic(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.dob} onChange={(val)=> setDOB(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.profession} onChange={(val)=> setProfession(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.email} onChange={(val)=> setEmail(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact1} onChange={(val)=> setContact1(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact2} onChange={(val)=> setContact2(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.region} onChange={(val)=> setRegion(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password} onChange={(val)=> setPassword(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword} onChange={(val)=> setConfirmPassword(val)}></TextInput>
-       
+          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.firstName} onChange={(val) => setFirstName(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.lastName} onChange={(val) => setLastName(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.nic} onChange={(val) => setNic(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.dob} onChange={(val) => setDOB(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.profession} onChange={(val) => setProfession(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.email} onChange={(val) => setEmail(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact1} onChange={(val) => setContact1(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.contact2} onChange={(val) => setContact2(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.region} onChange={(val) => setRegion(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.password} onChange={(val) => setPassword(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.confirmPassword} onChange={(val) => setConfirmPassword(val)}></TextInput>
         </View>
-      </ScrollView>
+
+        {/* Payment Form */}
         <View style={COMMON_STYLES.mainText}>
           <Text style={COMMON_STYLES.paymentText}>{STRINGS.paymentText}</Text>
         </View>
-        <ScrollView>
         <View style={COMMON_STYLES.paymentForm}>
-        
-          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.holderName} onChange={(val)=> setHoldername(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.bank} onChange={(val)=> setBank(val)}></TextInput>
-          <TextInput style={COMMON_STYLES.inputLast} placeholder={STRINGS.branch} onChange={(val)=> setBranch(val)}></TextInput>
-          
-          </View>
+          <TextInput style={COMMON_STYLES.inputFirst} placeholder={STRINGS.holderName} onChange={(val) => setHoldername(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.bank} onChange={(val) => setBank(val)}></TextInput>
+          <TextInput style={COMMON_STYLES.inputLast} placeholder={STRINGS.branch} onChange={(val) => setBranch(val)}></TextInput>
+        </View>
 
-        </ScrollView>
+        {/* Button */}
         <View style={COMMON_STYLES.buttonContainer}>
-            <TouchableHighlight
+          <TouchableHighlight
             style={COMMON_STYLES.regBtn}
             onPress={() => navigation.navigate('farmerPortal')}>
-              <Text  style={COMMON_STYLES.regBtnText}>Create Account</Text>
-            </TouchableHighlight>
-          </View>
-
-        </ScrollView>
-        
+            <Text style={COMMON_STYLES.regBtnText}>Create Account</Text>
+          </TouchableHighlight>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }

@@ -71,7 +71,7 @@ const COMMON_STYLES = StyleSheet.create({
     borderRadius: 10,
     marginBottom: 8
   },
- 
+
   inputLast: {
     backgroundColor: COLORS['white'],
     paddingHorizontal: 20,
@@ -94,18 +94,20 @@ const COMMON_STYLES = StyleSheet.create({
   },
 
 
-  
+
   button: {
     borderRadius: 10,
     marginLeft: 10,
   },
 
   regBtn: {
-    height: 28,
-    width: 140,
+    paddingVertical: 6,
     borderRadius: 10,
-    marginTop: 10,
-    backgroundColor: COLORS['primary'],
+    backgroundColor: COLORS.primary,
+    marginTop: 20,
+    width: '100%',
+    marginBottom: 6,
+    textAlign: 'center',
   },
 
   regBtnText: {
@@ -115,13 +117,13 @@ const COMMON_STYLES = StyleSheet.create({
   },
 
   headerBar: {
-    flex: 1, 
+    flex: 1,
     flexDirection: 'row',
     alignItems: 'flex-end'
   },
 
   AddFoodBtn: {
-    borderRadius:5,
+    borderRadius: 5,
     marginLeft: 3,
     padding: 2,
     backgroundColor: COLORS['primary'],
@@ -131,7 +133,7 @@ const COMMON_STYLES = StyleSheet.create({
     backgroundColor: COLORS['primary-background'],
     paddingHorizontal: 10,
   },
-  headerBarStyles:  {
+  headerBarStyles: {
     paddingHorizontal: 2,
   }
 

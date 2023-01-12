@@ -1,10 +1,9 @@
 import React from "react";
 
-import {View} from 'react-native';
+import { View } from 'react-native';
 
-export default function Chat({navigation})
-{
-    return(
+export default function Chat({ navigation }) {
+    return (
         <View>
 
         </View>

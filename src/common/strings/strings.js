@@ -28,7 +28,7 @@ const STRINGS = {
     expYr: 'Expire Year',
     expMonth: 'Expire Month',
     cvv: 'CVV',
-    otp:'OTP',
+    otp: 'OTP',
 
     userName: 'User Name',
     password: 'Password',
@@ -42,7 +42,9 @@ const STRINGS = {
 
     homePage: 'Home Page',
     settings: 'Account Page',
+    action: 'Action Page',
 
+    alreadyHaveAccountText: 'Already have an account ? Log In'
 }
 
 export default STRINGS;

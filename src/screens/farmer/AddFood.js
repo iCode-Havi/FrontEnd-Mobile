@@ -9,6 +9,7 @@ import COMMON_STYLES from '../../common/styles/styles';
 export default function AddFood({ navigation }) {
 
   // const [selected, setSelected] = useState("");
+  
   const data = [
     { key: '5', value: 'Vegetables' },
     { key: '6', value: 'Diary Products' },
@@ -23,7 +24,7 @@ export default function AddFood({ navigation }) {
         </View>
         <View style={COMMON_STYLES.registrationForm}>
           <SelectList style={COMMON_STYLES.selectInput}
-            // setSelected={(val) => setSelected(val)} 
+            
             defaultOption="Food Type"
             data={data}
             save="value" />
@@ -31,7 +32,7 @@ export default function AddFood({ navigation }) {
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.availableQuantity}></TextInput>
           <TextInput style={COMMON_STYLES.input} placeholder={STRINGS.unitPrice}></TextInput>
           <SelectList style={COMMON_STYLES.input}
-            // setSelected={(val) => setSelected(val)} 
+             
             defaultOption="Duration"
             data={data}
             save="value" />
