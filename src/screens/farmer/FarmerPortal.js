@@ -1,16 +1,21 @@
 import React, {useState} from 'react';
-import { FlatList, Text, TouchableHighlight, View, SafeAreaView, ScrollView} from 'react-native';
-
+import { Text, TouchableHighlight, View, SafeAreaView, ScrollView} from 'react-native';
 
 //COMMON
-
 import COMMON_STYLES from '../../common/styles/styles';
-import FARMER_STYLES from '../../common/styles/farmerStyles';
 import { SearchBar } from 'react-native-screens';
-import FoodCard from './farmerComponents/FoodCard';
 
+import COMPONENT_STYLES from '../../common/styles/componentStyles';
 
 export default function FarmerPortal({navigation}) {
+
+
+const [Item, setItem] = useState(
+  [
+      // image url need to be added
+      {itemName: 'Cucumber', price: '120.00', quantity:10 , description:'quality cucumber'},
+  ]
+  );
 
   const [search, setSearch] = useState("");
 
@@ -45,8 +50,22 @@ const updateSearch = (search) => {
             
         </View>
       <View>
-        <FoodCard/>
+      <View style={COMPONENT_STYLES.foodCard}>
+          {Item.map((itemDetail) => {
+            return(
+            <View>
+                <Text>{itemDetail.itemName}</Text>
+                <Text>{itemDetail.price}</Text>
+                <Text>{itemDetail.quantity}</Text>
+                <Text>{itemDetail.description}</Text>
+            </View>)
+          }
+            )
+          }
+            
+        </View> 
       </View>
+
       </ScrollView> 
     </View>
     </SafeAreaView>

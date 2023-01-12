@@ -4,9 +4,11 @@ import COLORS from '../colors/colors';
 
 const COMPONENT_STYLES = StyleSheet.create({
 foodCard: {
-    height: 2,
-    width: 3,
-    backgroundColor: 'green'
+    height: 160,
+    width: 150,
+    borderRadius: 8,
+    backgroundColor: COLORS['primary'],
+    opacity: 0.7,
   },
  
 

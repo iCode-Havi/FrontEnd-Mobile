@@ -1,13 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import { ScrollView, Text, TextInput, View, TouchableHighlight, SafeAreaView } from 'react-native';
 
 //COMMON
 import STRINGS from '../../../common/strings/strings';
 import COMMON_STYLES from '../../../common/styles/styles';
-import COLORS from '../../../common/colors/colors';
 
 export default function AssistantRegistration({ navigation }) {
+
+  const [firstName, setFirstName] = useState("");
 
 
   return (

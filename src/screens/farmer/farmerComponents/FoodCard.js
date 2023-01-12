@@ -1,17 +1,11 @@
-import React from "react";
-import { View } from "react-native";
-
-import COMPONENT_STYLES from '../../../common/styles/componentStyles';
+// import React, {useState} from "react";
+// import { View, Text } from "react-native";
 
 
 
-export default function FoodCard({ navigation }) {
-    return (
-        <View style={COMPONENT_STYLES.foodCard}>
+// export default function FoodCard({ navigation }) {
+//     return (
+        
+//         );
 
-
-
-        </View>  
-        );
-
-};
+// };
