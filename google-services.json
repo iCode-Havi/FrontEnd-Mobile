@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "121290535636",
+    "project_id": "havi-test",
+    "storage_bucket": "havi-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:121290535636:android:90768e17da344df86c8141",
+        "android_client_info": {
+          "package_name": "com.icode.havi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "121290535636-v3brei2mmokuajud5aifu3u7hhjodj87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaa2X5pOM-GL_eIp0a4ZLZUgfLQbL5e8g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "121290535636-v3brei2mmokuajud5aifu3u7hhjodj87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
