@@ -1,10 +1,11 @@
+//Don't Change This Navigator
+
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import AssistantRegistration from '../screens/auth/register/AssistantRegistration';
 import TransporterRegistration from '../screens/auth/register/TransporterRegistration';
 import FarmerRegistration from '../screens/auth/register/FarmerRegistration';
-import HeaderBar from '../components/headerBar/HeaderBar';
 
 const Stack = createNativeStackNavigator();
 

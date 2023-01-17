@@ -1,21 +1,23 @@
+// Don't Change Tab Navigator this is already completed
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/FontAwesome5';
 
-import Home from '../screens/home/Home';
 import Settings from '../screens/settings/Settings';
 import COLORS from '../common/colors/colors';
 import TAB_BAR_STYLES from '../common/styles/tabBarStyles';
-import StackNavigator from './StackNavigator';
 import HeaderBar from '../components/headerBar/HeaderBar';
 import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
+import StackNavigatorHome from './StackNavigatorHome';
+import Action from '../screens/action/Action';
 
 const Tab = createBottomTabNavigator();
 
 //Screen Names
 const TabScreenNames = {
     TabIconName01: 'Home',
-    TabIconName02: 'Details',
-    TabIconName03: 'Account'
+    TabIconName02: 'Actions',
+    TabIconName03: 'Account',
 }
 
 const TabNavigator = () => {
@@ -46,8 +48,8 @@ const TabNavigator = () => {
             headerRight: () => sandwich_icon,
             headerTitle: () => <HeaderBar />,
         })}>
-            <Tab.Screen name={TabScreenNames.TabIconName01} component={Home} />
-            <Tab.Screen name={TabScreenNames.TabIconName02} component={StackNavigator} />
+            <Tab.Screen name={TabScreenNames.TabIconName01} component={StackNavigatorHome} />
+            <Tab.Screen name={TabScreenNames.TabIconName02} component={Action} />
             <Tab.Screen name={TabScreenNames.TabIconName03} component={Settings} />
         </Tab.Navigator>
     )
