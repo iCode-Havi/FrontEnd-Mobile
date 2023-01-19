@@ -1,13 +1,12 @@
 // Don't Change Tab Navigator this is already completed
-
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/FontAwesome5';
+import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 
 import Settings from '../screens/settings/Settings';
 import COLORS from '../common/colors/colors';
 import TAB_BAR_STYLES from '../common/styles/tabBarStyles';
 import HeaderBar from '../components/headerBar/HeaderBar';
-import FontAwesome5Icon from 'react-native-vector-icons/FontAwesome5';
 import StackNavigatorHome from './StackNavigatorHome';
 import Action from '../screens/action/Action';
 

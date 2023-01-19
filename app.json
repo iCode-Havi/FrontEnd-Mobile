@@ -2,6 +2,7 @@
   "expo": {
     "name": "havi-frontend",
     "slug": "havi-frontend",
+    "scheme": "com.icode.havi",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,6 +22,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.icode.havi",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
@@ -28,6 +31,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "576e39d8-404f-4163-b6ad-c9d9ff91956d"
+      }
     }
   }
 }

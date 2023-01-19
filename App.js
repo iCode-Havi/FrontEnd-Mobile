@@ -1,13 +1,16 @@
-import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import {NavigationContainer} from '@react-navigation/native';
 import TabNavigator from './src/navigation/TabNavigator';
+import PushNotification from './src/notifications/pushNotification/PushNotification';
 
-
-export default function App() {
-  return (
-    <NavigationContainer>
-      <TabNavigator />
-    </NavigationContainer>
-  );
+const App = () => {
+    return (
+        <>
+            <PushNotification/>
+            <NavigationContainer>
+                <TabNavigator/>
+            </NavigationContainer>
+        </>
+    );
 }
 
+export default App;
