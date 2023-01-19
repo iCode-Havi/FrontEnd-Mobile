@@ -1,6 +1,9 @@
 node_modules/
 .expo/
 dist/
+.vscode/
+package-lock.json
+.idea/
 npm-debug.*
 *.jks
 *.p8
