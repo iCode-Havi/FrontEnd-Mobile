@@ -1,20 +1,20 @@
-import React from 'react';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Home from '../screens/home/Home';
-//Farmer Screen Routes
-import AddFood from '../screens/farmer/AddFood';
-import FarmerPortal from '../screens/farmer/FarmerPortal';
-import FarmerOrders from '../screens/farmer/FarmerOrders';
-import Profile from '../screens/common/Profile';
-//Auth routes
-import FarmerRegistration from '../screens/auth/register/FarmerRegistration';
-import AssistantRegistration from '../screens/auth/register/AssistantRegistration';
-import TransporterRegistration from '../screens/auth/register/TransporterRegistration';
 import UserLogin from '../screens/auth/login/UserLogin';
+import AssistantRegistration from '../screens/auth/register/AssistantRegistration';
+import FarmerRegistration from '../screens/auth/register/FarmerRegistration';
+//Auth routes
+import TransporterRegistration from '../screens/auth/register/TransporterRegistration';
 
 import Chat from '../screens/common/Chat';
 import Portal from '../screens/common/Portal';
+import Profile from '../screens/common/Profile';
+//Farmer Screen Routes
+import AddFood from '../screens/farmer/AddFood';
+import FarmerOrders from '../screens/farmer/FarmerOrders';
+import FarmerPortal from '../screens/farmer/FarmerPortal';
+
+import Home from '../screens/home/Home';
 
 const Stack = createNativeStackNavigator();
 
@@ -41,7 +41,7 @@ export default function StackNavigatorHome() {
 
             <Stack.Screen name="Chat" component={Chat} />
             <Stack.Screen name="Portal" component={Portal} />
-            
+
         </Stack.Navigator>
     )
 }
